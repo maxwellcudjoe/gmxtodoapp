@@ -10,7 +10,7 @@ if(port==null|| port==""){
 port=3000
 }
 app.use(express.static('Public'))
-let connectionString = 'mongodb+srv://okwandaho:Promzy@cluster0.njx4o.mongodb.net/TodoApp?retryWrites=true&w=majority'
+let connectionString = 'mongodb+srv://okwandaho:Password@cluster0.njx4o.mongodb.net/TodoApp?retryWrites=true&w=majority'
 mongodb.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, client) {
   db = client.db()
   app.listen(port)
